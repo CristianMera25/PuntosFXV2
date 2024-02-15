@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="854.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.mycompany.puntosfxv2.FXMLPuntosController">
+   <children>
+      <Label fx:id="idLabel1" layoutX="245.0" layoutY="41.0" text="Get Coordenadas" />
+      <Canvas fx:id="idCanvas" height="267.0" layoutX="25.0" layoutY="110.0" onMouseClicked="#getCoordenadas" width="574.0" />
+      <TextArea fx:id="idTXTArea" layoutX="618.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="640.0" layoutY="278.0" mnemonicParsing="false" onAction="#mostrarPuntos" text="Mostrar Lista Puntos" />
+      <MenuBar fx:id="idMenuB" layoutX="14.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#saveFile" text="Save" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
